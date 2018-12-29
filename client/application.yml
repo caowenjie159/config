@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: client
+  profiles:
+    active: client
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -27,6 +29,7 @@ spring:
           auto: update
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
+
 
 eureka:
   client:
